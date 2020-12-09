@@ -1,0 +1,43 @@
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<StackPane fx:controller="sample.RegistrationController"
+           xmlns:fx="http://javafx.com/fxml">
+    <VBox alignment="center" prefWidth="400" maxWidth="400" spacing="15">
+
+        <Label text="რეგისტრაცია" style="-fx-font-size: 23px; -fx-text-fill: #151414">
+            <VBox.margin>
+                <Insets bottom="20"/>
+            </VBox.margin>
+        </Label>
+
+        <TextField fx:id="usernameTextField" style="-fx-font-size: 16px" promptText="მომხმარებლის სახელი">
+            <VBox.margin>
+                <Insets left="15" right="15"/>
+            </VBox.margin>
+        </TextField>
+        <PasswordField fx:id="passwordField1" style="-fx-font-size: 16px" promptText="შეიყვანეთ პაროლი">
+            <VBox.margin>
+                <Insets left="15" right="15"/>
+            </VBox.margin>
+        </PasswordField>
+        <PasswordField fx:id="passwordField2" style="-fx-font-size: 16px" promptText="გაიმეორეთ პაროლი">
+            <VBox.margin>
+                <Insets left="15" right="15"/>
+            </VBox.margin>
+        </PasswordField>
+
+        <ScrollPane fx:id="phonesScrollPane" prefHeight="110" maxHeight="110">
+            <VBox.margin>
+                <Insets left="15" right="15"/>
+            </VBox.margin>
+        </ScrollPane>
+        <Button text="რეგისტრაცია" prefHeight="55" prefWidth="280" onAction="#onRegister"
+                style="-fx-background-radius: 10px; -fx-border-radius: 10px; -fx-font-size: 17px;
+                -fx-font-weight: bold; -fx-background-color: #798178; -fx-cursor: hand;">
+            <VBox.margin>
+                <Insets top="30"/>
+            </VBox.margin>
+        </Button>
+    </VBox>
+</StackPane>
